@@ -1,142 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Manasa | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body{
-            background: linear-gradient(135deg,#1f1c2c,#928dab);
-            color:white;
-            text-align:center;
-        }
-
-        header{
-            padding:80px 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        h1{
-            font-size:50px;
-            font-weight:700;
-        }
-
-        h1 span{
-            color:#00f7ff;
-        }
-
-        h2{
-            margin-top:15px;
-            font-weight:300;
-        }
-
-        section{
-            padding:60px 20px;
-        }
-
-        .card{
-            background:rgba(255,255,255,0.1);
-            margin:20px auto;
-            padding:30px;
-            width:80%;
-            max-width:600px;
-            border-radius:15px;
-            backdrop-filter: blur(10px);
-            transition:0.4s;
-        }
-
-        .card:hover{
-            transform:scale(1.05);
-            background:rgba(255,255,255,0.2);
-        }
-
-        .skills span{
-            display:inline-block;
-            margin:10px;
-            padding:10px 15px;
-            border-radius:20px;
-            background:#00f7ff;
-            color:#000;
-            font-weight:500;
-        }
-
-        footer{
-            padding:30px;
-            background:rgba(0,0,0,0.3);
-            margin-top:50px;
-        }
-
-        @keyframes fadeIn{
-            from{opacity:0; transform:translateY(-20px);}
-            to{opacity:1; transform:translateY(0);}
-        }
-
-        .highlight{
-            color:#00f7ff;
-            font-weight:bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manasa Nanabala Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #0f0f0f; color: #fff; margin: 0; padding: 0; }
+    nav { background-color: #111; padding: 10px; text-align: center; position: sticky; top: 0; }
+    nav a { color: #00f7ff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    header { text-align: center; padding: 40px 20px; }
+    header img { border-radius: 50%; width: 180px; box-shadow: 0 0 20px #00f7ff; transition: transform 0.3s; }
+    header img:hover { transform: scale(1.1); }
+    h1, h2 { color: #00f7ff; margin-bottom: 10px; }
+    section { padding: 20px; margin: 20px auto; max-width: 800px; background-color: #1a1a1a; border-radius: 10px; }
+    ul { list-style: none; padding-left: 0; }
+    ul li { padding: 5px 0; }
+    a { color: #00f7ff; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Hi, I'm <span>Manasa</span> 👋</h1>
-    <img src="profile.jpg" alt="Manasa Photo" width="180" style="border-radius:50%; margin-top:20px; box-shadow:0 0 20px #00f7ff;">
-    <h2>Aspiring Software Developer & Machine Learning Enthusiast</h2>
-</header>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About Me</a> | 
+    <a href="#skills">Skills</a> | 
+    <a href="#projects">Projects</a> | 
+    <a href="#contact">Contact</a>
+  </nav>
 
-<section>
-    <div class="card">
-        <h2 class="highlight">About Me</h2>
-        <p>
-            Passionate developer focused on building intelligent systems.
-            Developed an <b>Automated Career Counselling System</b> using
-            Random Forest Algorithm and worked on Stack Marketing Analysis project.
-        </p>
-    </div>
+  <!-- Header -->
+  <header>
+    <h1>Hi, I'm <span>Manasa Nanabala</span> 👋</h1>
+    <img src="manasa.jpeg" alt="Manasa Photo">
+  </header>
 
-    <div class="card">
-        <h2 class="highlight">Skills</h2>
-        <div class="skills">
-            <span>Python</span>
-            <span>Machine Learning</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Git</span>
-            <span>GitHub</span>
-        </div>
-    </div>
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m <b>Manasa Nanabala</b>, a BTech graduate in AI & ML. I have expertise in Python, Full Stack Development, and Data Analytics. I enjoy building projects that solve real-world problems and improving my skills in software development and machine learning.</p>
+  </section>
 
-    <div class="card">
-        <h2 class="highlight">Projects</h2>
-        <p>
-            🔹 Automated Career Counselling using Random Forest<br><br>
-            🔹 Stack Marketing Analysis Project
-        </p>
-    </div>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Full Stack Development</li>
+      <li>Data Analytics</li>
+      <li>Machine Learning / AI</li>
+      <li>SQL / Databases</li>
+    </ul>
+  </section>
 
-    <div class="card">
-        <h2 class="highlight">Contact</h2>
-        <p>Email: your-email@example.com</p>
-        <p>GitHub: github.com/yourusername</p>
-    </div>
-</section>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Automated Career Counselling System</b> – Using Random Forest Algorithm to guide students in choosing careers.</li>
+      <li><b>Stack Marketing Project</b> – Full-stack web application for marketing analysis and reporting.</li>
+    </ul>
+  </section>
 
-<footer>
-    © 2026 Manasa | Designed with Passion 💙
-</footer>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:nanabalamanasa033@gmail.com">nanabalamanasa033@gmail.com</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/
+nanabala-manasa-015b8734a>www.linkedin.com/in/
+nanabala-manasa-015b8734a</a></p>
+    <p>GitHub: <a href="https://github.com/nanabalamanasa033">github.com/nanabalamanasa033</a></p>
+  </section>
 
 </body>
 </html>
